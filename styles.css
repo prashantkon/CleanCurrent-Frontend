@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Mukta:wght@500&family=Roboto+Condensed&display=swap');
+
+#mainTitle {
+    float: left;
+    font-size: 15vw;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}  
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+#mainDesc {
+    float: left;
+    font-size: 3.5vw;
+    color: white;
+    animation: slideup-fadein 1s ease-out forwards;
+}
+@keyframes slideup-fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container {
+    height: 100%;
+}
+.nav-link {
+    color: white;
+    font-family: Roboto Condensed;
+    float: right;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+.navbar-fixed-top.scrolled {
+    background-color: #ecfafc !important;
+    transition: background-color 200ms linear;
+}
+#top {
+    background-image: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg");
+    background-size: 100% 200%;
+    padding: 10vh;
+}

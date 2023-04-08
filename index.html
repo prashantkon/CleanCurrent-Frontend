@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src = "main.js"></script>
+        <link rel = "stylesheet" href = "styles.css">
+        <script>
+            $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+            });
+        </script>
+    </head>
+    <body>
+        <div id = "top">
+            <nav class="navbar navbar-expand-sm fixed-top">
+                <div class="container-fluid">
+                  <a id = "home" class="navbar-brand" href="javascript:void(0)"><img src = "https://uploads-ssl.webflow.com/63617eb68a66008a1a2130a0/6377947e0aeae206d00d0a0f_Hero%20Hp%20Image%20Cropped.png" alt = "Logo" style = "width:40px;"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a id = "product"class="nav-link" href="javascript:void(0)"><strong>PRODUCT</strong></a>
+                      </li>
+                      <li class="nav-item">
+                        <a id = "other" class="nav-link" href="javascript:void(0)"><strong>OTHER</strong></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-center" id = "titles">
+                    <div id = "mainTitle" class = "text"><strong>Recycling</strong></div>
+                  </div>
+                </div>
+                  <div class="col-md-12 text-center" id = "titles">
+                    <div id = "mainDesc"><strong>Through AI Enchanced Technologies</strong></div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
