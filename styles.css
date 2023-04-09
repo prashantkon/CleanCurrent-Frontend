@@ -29,7 +29,7 @@ nav {
     }
 }
 #mainDesc {
-    float: left;
+    text-align: left;
     font-size: 3.5vw;
     color: white;
     animation: slideup-fadein 1s ease-out forwards;
@@ -249,5 +249,8 @@ section .wave.wave4 {
     width: 50%;
 }
 #sigImgWrapper {
+    text-align: center;
+}
+#game {
     text-align: center;
 }
