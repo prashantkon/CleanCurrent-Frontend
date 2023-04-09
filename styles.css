@@ -14,6 +14,9 @@ html, body {
 #titles {
     z-index: 1002;
 }
+#titles2 {
+    height: 80%;
+}
 nav {
     z-index: 1001;
 }
@@ -162,6 +165,10 @@ section .wave.wave4 {
     height: 50%;
     width: 60%;
 }
+#introImg2 {
+    height: 30%;
+    width: 40%;
+}
 
 .text {
     color: rgb(95, 95, 95);
@@ -218,4 +225,28 @@ section .wave.wave4 {
 
 #blogImg {
     width: 70%;
+}
+
+#gallery img {
+    transition: transform .2s;
+}
+#gallery img:hover {
+    transform: scale(1.06);
+}
+
+#examples {
+    margin-top: 20vh;
+}
+#cleanCurrentGit {
+    text-align: center;
+}
+#sigTitle {
+    margin-top: 10vh;
+}
+#sigImg {
+    height: 60%;
+    width: 50%;
+}
+#sigImgWrapper {
+    text-align: center;
 }
