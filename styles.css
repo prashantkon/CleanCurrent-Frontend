@@ -207,6 +207,7 @@ section .wave.wave4 {
     text-align: left !important;
     margin-top: 10vh;
     background-color: white;   
+    width: 30vw;
 }
 .extraImg {
     height: 30vh;
