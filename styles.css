@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Mukta:wght@500&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Mukta:wght@500&family=Roboto+Condensed&display=swap');
 
 html, body {
    overflow-x: hidden;
@@ -72,7 +73,7 @@ nav {
 }
 #divider {
     margin-top: -101vh;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 101vh;
     background: transparent;
@@ -145,10 +146,9 @@ section .wave.wave4 {
     background-color: white;
     /* 025e9f*/
     text-align: center;
-}
-#content {
     padding: 15vh;
-    padding-bottom: 0vh;
+    display: flex; 
+    flex-direction: column; 
 }
 .container h1 {
     font-size: 6vh;
@@ -195,8 +195,23 @@ section .wave.wave4 {
     margin-right: 10vh;
     margin-top: 5vh;
 }
-#vertical {
+.vertical {
+    margin: 2vw;
     text-align: left !important;
     margin-top: 10vh;
-    display: table-column;
+    background-color: white;   
+}
+.extraImg {
+    height: 30vh;
+    margin-bottom: 3vh;
+}
+#special {
+    width: 25vw;
+}
+#extra {
+    background-color: white;
+    padding: 15vh;
+    margin-bottom: 20vh;
+    display: flex;
+    justify-content: center;
 }
