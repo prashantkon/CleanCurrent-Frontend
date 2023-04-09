@@ -7,6 +7,9 @@
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
 }  
+nav {
+    z-index: 1001;
+}
 @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -32,7 +35,7 @@
     }
 }
 .container {
-    height: 100%;
+    height: 90%;
 }
 .nav-link {
     color: white;
@@ -46,7 +49,82 @@
     transition: background-color 200ms linear;
 }
 #top {
-    background-image: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg");
-    background-size: 100% 200%;
-    padding: 10vh;
+    background: linear-gradient(to bottom, rgba(247, 244, 244, 0.52), rgba(89, 173, 247, 0.73));
+    background-size: 100% 95%;
+}
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 80%;
+    z-index: -1;
+}
+#mynavBar {
+    float: right;
+}
+.divider {
+    margin-top: -100vh;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+}
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("./images/wave.png");
+    background-size: 1000px 100px;
+}
+section .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+section .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5 ;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+section .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+section .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 10px;
+} 
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+#content {
+    background-color: white;
 }
