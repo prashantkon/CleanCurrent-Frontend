@@ -5,7 +5,6 @@
         <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
         <script src = "main.js" defer></script>
         <link rel = "stylesheet" href = "styles.css">
-        <script src = "typed.js"></script>
         <title>CleanCurrent</title>
     </head>
     <body>
@@ -102,4 +101,15 @@
                 </div>
             </div>
     </body>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+        strings: ["Cleaning".bold(), "Sorting".bold(), "Improving".bold(), "Saving".bold(), "Innovating".bold(), "Sustaining".bold()],
+        loop: true,
+        typeSpeed: 90,
+        backSpeed: 80,
+        startDelay: 2000,
+        backDelay: 2000,
+        onLastStringBackspaced: (self) => {}
+    });
+    </script>
 </html>
