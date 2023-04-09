@@ -2,16 +2,10 @@
 <html>
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
         <script src = "main.js"></script>
         <link rel = "stylesheet" href = "styles.css">
-        <script>
-            $(function () {
-            $(document).scroll(function () {
-                var $nav = $(".navbar-fixed-top");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-            });
-            });
-        </script>
+        <title>CleanCurrent</title>
     </head>
     <body>
         <div id = "top">
@@ -20,7 +14,7 @@
             </video>
             <nav class="navbar navbar-expand-sm">
                 <div class="container-fluid">
-                  <a id = "home" class="navbar-brand" href="javascript:void(0)"><img src = "https://uploads-ssl.webflow.com/63617eb68a66008a1a2130a0/6377947e0aeae206d00d0a0f_Hero%20Hp%20Image%20Cropped.png" alt = "Logo" style = "width:40px;"></a>
+                  <a id = "home" class="navbar-brand" href="javascript:void(0)"><img src = "./images/logo.png" alt = "Logo" style = "width:40px;"> <strong>CleanCurrent</strong></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -36,25 +30,62 @@
                   </div>
                 </div>
             </nav>
-            <div class="container">
+            <div class="container" id = "titles">
                 <div class="row">
                   <div class="col-md-12 text-center" id = "titles">
-                    <h1 id = "mainTitle" class = "animated-gradient"><strong>Recycling</strong></h1>
+                    <span class="typing-words" id = "mainTitle"> 
+                        <span class = "multiText" id = "mainTitle>"><strong>Recycling</strong></span>
+                    </span>
                   </div>
                 </div>
-                  <div class="col-md-12 text-center" id = "titles">
-                    <h1 id = "mainDesc"><strong>Through AI Enchanced Technologies</strong></h1>
-                  </div>
+                <div class = "row">
+                    <div class="col-md-12 text-center" id = "titles">
+                        <h1 id = "mainDesc"><strong>Through AI-Assisted Technologies</strong></h1>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class="col-md-12 text-center" id = "titles">
+                        <button
+                        id = "productBtn" class="btn btn-light btn-lg action-button" type="button"><strong>Try It Out</strong><i class="fa fa-long-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-            <section class = "divider">
+            <section id = "divider">
                 <div class = "wave wave1"></div>
                 <div class = "wave wave2"></div>
                 <div class = "wave wave3"></div>
                 <div class = "wave wave4"></div>
             </section>
             <div id = "content">
-                <p>JSHDJH</p>
+                <div class = "container">
+                    <h1><strong>Mission Statement</strong></h1>
+                    <h3><strong>To Reduce Human Trash, Especially Recyclable Plastics, in Oceanic Ecosystems</strong></h3>
+                    <section class="border-bottom mb-4">
+                    </section>
+                    <div id = "desc">
+                        <img src="./images/underwater.jpeg" class="img-fluid shadow-2-strong rounded-5 mb-4" alt="" id = "introImg">
+                        <div id = "vertical">
+                            <h2 id = "subtitle"><strong>CleanCurrent</strong><br></h2>
+                            <p class ="text"><br>It is common knowledge that trash in our oceans is a big problem. The damage to wildlife and coastal communities is dangerously high. Although completely removing the trash in our oceans is a complicated problem that cannot be solved at once, WasteWise eliminates a significant portion. With its highly accurate AI model, CleanCurrent will ensure that no more recyclable waste will make it into the ocean.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "container">
+                    
+                </div>
             </div>
     </body>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings: ["Cleaning".bold(), "Improving".bold(), "Sorting".bold(), "Saving".bold(), "Innovating".bold(), "Sustaining".bold()],
+            loop: true,
+            typeSpeed: 90,
+            backSpeed: 80,
+            startDelay: 2000,
+            backDelay: 1500,
+            onLastStringBackspaced: (self) => {}
+        });
+    </script>
 </html>
