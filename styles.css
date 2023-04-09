@@ -215,3 +215,7 @@ section .wave.wave4 {
     display: flex;
     justify-content: center;
 }
+
+#blogImg {
+    width: 70%;
+}

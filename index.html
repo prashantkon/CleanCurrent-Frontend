@@ -3,8 +3,9 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-        <script src = "main.js"></script>
+        <script src = "main.js" defer></script>
         <link rel = "stylesheet" href = "styles.css">
+        <script src = "typed.js"></script>
         <title>CleanCurrent</title>
     </head>
     <body>
@@ -20,6 +21,9 @@
                   </button>
                   <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a id = "problem"class="nav-link" href="javascript:void(0)"><strong>THE PROBLEM</strong></a>
+                        </li>
                       <li class="nav-item">
                         <a id = "product"class="nav-link" href="javascript:void(0)"><strong>PRODUCT</strong></a>
                       </li>
@@ -78,19 +82,19 @@
                     <div id = "extra">
                         <div class = "vertical">
                             <img src = "./images/polluted.png" class = "extraImg">
-                            <h2><strong>The problem</strong></h2>
+                            <h4><strong>The problem</strong></h4>
                             <p class = "text">Plastic pollution is a growing problem in the world's oceans, with a significant amount of plastic waste ending up in landfills and harming marine life. Microplastics in seafood can also affect humans, and coastal communities that rely on the ocean are also impacted. Effective waste management and recycling practices are needed to address the issue and reduce the impact of plastic pollution on the environment and human life.</p>
                             <button type="button" class="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark">Learn more</button>
                         </div>
                         <div class = "vertical">
                             <img src = "./images/clean.png" class = "extraImg">
-                            <h2><strong>Current solution</strong></h2>
+                            <h4><strong>Current solution</strong></h4>
                             <p class = "text">lorem ispeedorem </p>
                             <button type="button" class="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark">Learn more</button>
                         </div>
                         <div class = "vertical">
                             <img src = "./images/ai.png" class = "extraImg" id = "special">
-                            <h2><strong>CleanCurrent's part</strong></h2>
+                            <h4><strong>CleanCurrent's part</strong></h4>
                             <p class = "text">lorem ispeedorem </p>
                             <button type="button" class="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark">Learn more</button>
                         </div>
@@ -98,15 +102,4 @@
                 </div>
             </div>
     </body>
-    <script>
-        var typingEffect = new Typed(".multiText", {
-            strings: ["Cleaning".bold(), "Sorting".bold(), "Improving".bold(), "Saving".bold(), "Innovating".bold(), "Sustaining".bold()],
-            loop: true,
-            typeSpeed: 90,
-            backSpeed: 80,
-            startDelay: 2000,
-            backDelay: 2000,
-            onLastStringBackspaced: (self) => {}
-        });
-    </script>
 </html>
