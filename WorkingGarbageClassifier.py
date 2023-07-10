@@ -42,7 +42,7 @@ def predict():
     image_file = request.files['image']
     image = Image.open(image_file)
     message = predict_external_image(image)
-    return jsonify({'message': me})
+    return jsonify({'message': message})
 
 def predict_image(img, model):
     # Convert to a batch of 1
