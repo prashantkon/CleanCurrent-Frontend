@@ -182,6 +182,7 @@ section .wave.wave4 {
     width: 30vh;
     font-size: 2.5vw;
     color:rgb(95, 95, 95);
+
 }
 
 #floor {
@@ -253,4 +254,37 @@ section .wave.wave4 {
 }
 #game {
     text-align: center;
+}
+#drop-area {
+ width: 500px;
+ height: 300px;
+ padding: 30px;
+ background: linear-gradient(#e7baff, #c2b6d9);
+ text-align: center;
+ border-radius: 20px;
+
+}
+
+#img-view{
+ width: 100%;
+ height: 100%;
+ border-radius: 20px;
+ border: 2px dashed #bbb5ff;
+ background: #f7f8ff;
+ background-position: center;
+ background-size: cover;
+}
+#img-view img{
+width: 100px;
+margin-top: 25px;
+}
+#img-view span{
+ display: block;
+ font-size: 12px;
+ color: #777;
+ margin-top:15px;
+}
+
+#output{
+color: black;
 }
